@@ -1,163 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-        <meta charset="utf-8" />
-        <title>Eric Chen's Blog</title>
-        <link rel="stylesheet" href="https://ericchen23.github.io/theme/css/main.css" />
-        <link href="https://ericchen23.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Eric Chen's Blog Atom Feed" />
+    <title>Eric Chen's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+    <link href="https://ericchen23.github.io/images/icon2.png" rel="icon">
+
+<link rel="canonical" href="https://ericchen23.github.io">
+        <meta name="author" content="Eric Chen" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Eric Chen's Blog" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Eric Chen's Blog"/>
+        <meta property="og:url" content="https://ericchen23.github.io"/>
+        <meta property="og:description" content="Eric Chen's Blog"/>
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://ericchen23.github.io/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="https://ericchen23.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://ericchen23.github.io/theme/css/pygments/emacs.css" rel="stylesheet">
+    <link href="https://ericchen23.github.io/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ericchen23.github.io/theme/css/style.css" type="text/css"/>
+        <link href="https://ericchen23.github.io/theme/css/custom.css" rel="stylesheet">
+
+        <link href="https://ericchen23.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Eric Chen's Blog ATOM Feed"/>
+
+
 </head>
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://ericchen23.github.io/">Eric Chen's Blog </a></h1>
-                <nav><ul>
-                    <li><a href="https://ericchen23.github.io/category/blog/">Blog</a></li>
-                    <li><a href="https://ericchen23.github.io/category/intro/">Intro</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://ericchen23.github.io/" class="navbar-brand">
+<img class="img-responsive pull-left gap-right" src="https://ericchen23.github.io/images/icon.jpg" width="28"/> Eric Chen's Blog            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="https://ericchen23.github.io/category/blog/">Blog</a>
+                        </li>
+                        <li >
+                            <a href="https://ericchen23.github.io/category/intro/">Intro</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+              <li><a href="https://ericchen23.github.io/archives/"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
 
-                <section id="content" class="body">
-                    <ol id="posts-list" class="hfeed" start="4">
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://ericchen23.github.io/2018/11/NLP-topic-modeling.html" rel="bookmark"
-                           title="Permalink to Modeling on Amazon Phone and Accessories Reviews using NLP">Modeling on Amazon Phone and Accessories Reviews using NLP</a></h1>
-                </header>
+<!-- Banner -->
+<!-- End Banner -->
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-11-02T16:33:00+13:00">
-                Published: Fri 02 November 2018
-        </abbr>
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <article>
+                <h2><a href="https://ericchen23.github.io/2018/11/NLP-topic-modeling.html">Modeling on Amazon Phone and Accessories Reviews using NLP</a></h2>
+                <div class="summary"><p>Online shopping now makes our life much easier than it used to be. Without the need of going out and visting a shopping mall or a grocery store, we can buy anything we want through e-shopping. But online shopping comes with its own caveats. One of the biggest challenges, and I guess almost every would face, is verifying the authenticity of a product. Is it as good as advertised on the e-commerce site? Will the product has a good quality? Are the reviews given by other customers really true or are they false advertising, or are they fake or bots' reviews? These are important questions customers need to ask before splurging their money. I believe there are a bunch of people like me, who believe in customers' reviews much much more than the fancy product description of an item. In making our decision in buying a product, if most customers' reviews talking about how good it is, then it is probably a really good product. If every customer talks bad about a product, I am afraid I will not buy it no matter how good it shows me in the product description. And in some funny cases, which is quite often from my perspective, some users like to leave a high rating or score no matter how bad they think the product is. Oh god, this is tricky!</p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/11/NLP-topic-modeling.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://ericchen23.github.io/2018/10/Data-visulization1.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part I</a></h2>
+                <div class="summary"><p>This post summarizes the top 50 most valuable Matplotlib &amp; Seaborn data visualizations in data science. It can be taken as a data visualization handbook for you to look up for useful visulaization.  The 50 visualizations are categorized into 7 different application scenarios, and this post would mainly focuses on the first two categories, shown as follows: Correlation, Deviation, Ranking, Distribution, Composition, Change, and Groups. The whole content is divided into three parts, and this post is Part I. We will cover the first two categories in Part I.</p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/10/Data-visulization1.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://ericchen23.github.io/2018/10/XGBOOST-predict.html">New Airbnb User Booking Prediction</a></h2>
+                <div class="summary"><p>The basic aim of this notebook is to predict new Airbnb users' first destination country based a historical dataset. This work involves a considerable amount of data cleansing work. After the dataset is cleaned and preprocessed, I use a popular xgboost classifier as the prediction model, and grid searching with 3-fold cross-validation to find the most suitable parameters for the classifier. If you are interested in finding more about the dataset or the xgboost classifier, please follow along this article.</p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/10/XGBOOST-predict.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://ericchen23.github.io/2018/09/Naive-Bayes.html">Indian diabetes database modeling using Naive Bayes</a></h2>
+                <div class="summary"><p>Coding from scratch. To better understand the process of Naive Bayes model training. And in the end, we make another Naive Bayes Classifier through normal workflow using sklearn. In machine learning, naive Bayes classifiers are a family of simple "probabilistic classifiers" based on applying Bayes' theorem with strong (naive) independence assumptions between the features. A naive Bayes classifier considers each of these features to be independent to each other. That why it is referred as "Naive".</p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/09/Naive-Bayes.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://ericchen23.github.io/2018/08/Churn-rate-prediction.html">Churn Rate Prediction Using Neural Networks</a></h2>
+                <div class="summary"><p>The basic aim of this post is to predict customer churn for a certain bank i.e. which customer is going to leave this bank service. Fully-connected neural networks with different architectures will be explored and compared. Since this is a binary prediction , logistic regression may also works pretty well. Feel free to give it a shot~</p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/08/Churn-rate-prediction.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://ericchen23.github.io/author/hao-chen.html">Hao Chen</a>
-        </address>
-<p>In <a href="https://ericchen23.github.io/category/blog/">Blog</a>.</p>
-<p>tags: <a href="https://ericchen23.github.io/label/data-science/">Data Science</a> <a href="https://ericchen23.github.io/label/nlp/">NLP</a> <a href="https://ericchen23.github.io/label/topic-modeling/">Topic Modeling</a> </p>
-</footer><!-- /.post-info -->                <p>Online shopping now makes our life much easier than it used to be. Without the need of going out and visting a shopping mall or a grocery store, we can buy anything we want through e-shopping. But online shopping comes with its own caveats. One of the biggest challenges, and I guess almost every would face, is verifying the authenticity of a product. Is it as good as advertised on the e-commerce site? Will the product has a good quality? Are the reviews given by other customers really true or are they false advertising, or are they fake or bots' reviews? These are important questions customers need to ask before splurging their money. I believe there are a bunch of people like me, who believe in customers' reviews much much more than the fancy product description of an item. In making our decision in buying a product, if most customers' reviews talking about how good it is, then it is probably a really good product. If every customer talks bad about a product, I am afraid I will not buy it no matter how good it shows me in the product description. And in some funny cases, which is quite often from my perspective, some users like to leave a high rating or score no matter how bad they think the product is. Oh god, this is tricky!</p>
-                <a class="readmore" href="https://ericchen23.github.io/2018/11/NLP-topic-modeling.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+        <ul class="pagination">
+                <li class="prev"><a href="https://ericchen23.github.io/index.html">&laquo;</a>
+                </li>
+                    <li class=""><a
+                            href="https://ericchen23.github.io/index.html">1</a></li>
+                    <li class="active"><a
+                            href="https://ericchen23.github.io/index2.html">2</a></li>
+                    <li class=""><a
+                            href="https://ericchen23.github.io/index3.html">3</a></li>
+                <li class="next"><a
+                        href="https://ericchen23.github.io/index3.html">&raquo;</a></li>
+        </ul>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<div id="aboutme">
+        <p>
+            <img width="100%" class="img-thumbnail" src="https://ericchen23.github.io/images/profile.jpg"/>
+        </p>
+    <p>
+      <strong>About Eric Chen</strong><br/>
+        <span>I love Data Science and Analytics. I love to explore the wonderful world of data, and love to improve myself day by day.</span>
+    </p>
+</div><!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://ericchen23.github.io/2018/10/Data-visulization1.html" rel="bookmark"
-                           title="Permalink to Valuable Matplotlib & Seaborn Visualization Handbook, Part I">Valuable Matplotlib & Seaborn Visualization Handbook, Part I</a></h1>
-                </header>
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://www.linkedin.com/in/hao-chen-auckland/"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://www.facebook.com/profile.php?id=100008887505096"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+    <li class="list-group-item"><a href="https://github.com/haochen23"><i class="fa fa-github-square fa-lg"></i> Github</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-10-14T09:23:00+13:00">
-                Published: Sun 14 October 2018
-        </abbr>
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="https://ericchen23.github.io/2019/02/Time Series Analysis.html">Time Series Analysis on Superstore Sales Date</a></li>
+    <li class="list-group-item"><a href="https://ericchen23.github.io/2019/01/Prediction.html">Car Crash Prediction in NZ - Machine Learning Pipeline</a></li>
+    <li class="list-group-item"><a href="https://ericchen23.github.io/2018/12/Data-visulization3.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part III</a></li>
+    <li class="list-group-item"><a href="https://ericchen23.github.io/2018/12/NLP-twitter-sentiment.html">Twitter Sentiment Modeling on Detecting Racist or Sexist tweets</a></li>
+    <li class="list-group-item"><a href="https://ericchen23.github.io/2018/11/Data-visulization2.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part II</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://ericchen23.github.io/author/hao-chen.html">Hao Chen</a>
-        </address>
-<p>In <a href="https://ericchen23.github.io/category/blog/">Blog</a>.</p>
-<p>tags: <a href="https://ericchen23.github.io/label/data-science/">Data Science</a> <a href="https://ericchen23.github.io/label/data-visualization/">Data visualization</a> <a href="https://ericchen23.github.io/label/matplotlib/">Matplotlib</a> <a href="https://ericchen23.github.io/label/seaborn/">Seaborn</a> </p>
-</footer><!-- /.post-info -->                <p>This post summarizes the top 50 most valuable Matplotlib &amp; Seaborn data visualizations in data science. It can be taken as a data visualization handbook for you to look up for useful visulaization.  The 50 visualizations are categorized into 7 different application scenarios, and this post would mainly focuses on the first two categories, shown as follows: Correlation, Deviation, Ranking, Distribution, Composition, Change, and Groups. The whole content is divided into three parts, and this post is Part I. We will cover the first two categories in Part I.</p>
-                <a class="readmore" href="https://ericchen23.github.io/2018/10/Data-visulization1.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+<!-- Sidebar/Tag Cloud -->
+<li class="list-group-item">
+  <a href="https://ericchen23.github.io/label/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+  <ul class="list-group list-inline tagcloud" id="tags">
+    <li class="list-group-item tag-1">
+      <a href="https://ericchen23.github.io/label/analytics/">Analytics</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/car-crash-prediction/">Car Crash Prediction</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://ericchen23.github.io/label/data-science/">Data Science</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://ericchen23.github.io/label/data-visualization/">Data Visualization</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/firsts-introduction/">firsts Introduction</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://ericchen23.github.io/label/matplotlib/">Matplotlib</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://ericchen23.github.io/label/nlp/">NLP</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/sales-forecasting/">Sales Forecasting</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://ericchen23.github.io/label/seaborn/">Seaborn</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/sentiment-analysis/">Sentiment analysis</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/time-series-analysis/">Time Series Analysis</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/topic-modeling/">Topic Modeling</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/xgboost/">xgboost</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Tag Cloud -->
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://ericchen23.github.io/2018/10/XGBOOST-predict.html" rel="bookmark"
-                           title="Permalink to New Airbnb User Booking Prediction">New Airbnb User Booking Prediction</a></h1>
-                </header>
+<!-- Sidebar/Github -->
+<li class="list-group-item">
+  <h4><i class="fa fa-github fa-lg"></i><span class="icon-label">GitHub Repos</span></h4>
+  <div id="gh_repos">
+    <p class="list-group-item">Status updating...</p>
+  </div>
+</li>
+<!-- End Sidebar/Github -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-10-08T14:27:00+13:00">
-                Published: Mon 08 October 2018
-        </abbr>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2019 Eric Chen
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="https://ericchen23.github.io/theme/js/jquery.min.js"></script>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://ericchen23.github.io/author/hao-chen.html">Hao Chen</a>
-        </address>
-<p>In <a href="https://ericchen23.github.io/category/blog/">Blog</a>.</p>
-<p>tags: <a href="https://ericchen23.github.io/label/data-science/">Data Science</a> <a href="https://ericchen23.github.io/label/xgboost/">xgboost</a> </p>
-</footer><!-- /.post-info -->                <p>The basic aim of this notebook is to predict new Airbnb users' first destination country based a historical dataset. This work involves a considerable amount of data cleansing work. After the dataset is cleaned and preprocessed, I use a popular xgboost classifier as the prediction model, and grid searching with 3-fold cross-validation to find the most suitable parameters for the classifier. If you are interested in finding more about the dataset or the xgboost classifier, please follow along this article.</p>
-                <a class="readmore" href="https://ericchen23.github.io/2018/10/XGBOOST-predict.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://ericchen23.github.io/theme/js/bootstrap.min.js"></script>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://ericchen23.github.io/2018/09/Naive-Bayes.html" rel="bookmark"
-                           title="Permalink to Indian diabetes database modeling using Naive Bayes">Indian diabetes database modeling using Naive Bayes</a></h1>
-                </header>
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://ericchen23.github.io/theme/js/respond.min.js"></script>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-09-15T14:25:00+12:00">
-                Published: Sat 15 September 2018
-        </abbr>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://ericchen23.github.io/author/hao-chen.html">Hao Chen</a>
-        </address>
-<p>In <a href="https://ericchen23.github.io/category/blog/">Blog</a>.</p>
-<p>tags: <a href="https://ericchen23.github.io/label/data-science/">Data Science</a> <a href="https://ericchen23.github.io/label/analytics/">Analytics</a> </p>
-</footer><!-- /.post-info -->                <p>Coding from scratch. To better understand the process of Naive Bayes model training. And in the end, we make another Naive Bayes Classifier through normal workflow using sklearn. In machine learning, naive Bayes classifiers are a family of simple "probabilistic classifiers" based on applying Bayes' theorem with strong (naive) independence assumptions between the features. A naive Bayes classifier considers each of these features to be independent to each other. That why it is referred as "Naive".</p>
-                <a class="readmore" href="https://ericchen23.github.io/2018/09/Naive-Bayes.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://ericchen23.github.io/2018/08/Churn-rate-prediction.html" rel="bookmark"
-                           title="Permalink to Churn Rate Prediction Using Neural Networks">Churn Rate Prediction Using Neural Networks</a></h1>
-                </header>
+<!-- GitHub JS Code -->
+<script type="text/javascript">
+$(document).ready(function () {
+  if (!window.jXHR) {
+    var jxhr = document.createElement('script');
+    jxhr.type = 'text/javascript';
+    jxhr.src = 'https://ericchen23.github.io/theme/js/jXHR.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(jxhr, s);
+  }
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-08-20T12:25:00+12:00">
-                Published: Mon 20 August 2018
-        </abbr>
+  github.showRepos({
+    user: 'haochen23',
+    count: 5,
+    skip_forks: false,
+    target: '#gh_repos'
+  });
+});
+</script>
+<script src="https://ericchen23.github.io/theme/js/github.js" type="text/javascript"></script>
+<!-- End GitHub JS Code -->
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://ericchen23.github.io/author/hao-chen.html">Hao Chen</a>
-        </address>
-<p>In <a href="https://ericchen23.github.io/category/blog/">Blog</a>.</p>
-<p>tags: <a href="https://ericchen23.github.io/label/data-science/">Data Science</a> <a href="https://ericchen23.github.io/label/analytics/">Analytics</a> </p>
-</footer><!-- /.post-info -->                <p>The basic aim of this post is to predict customer churn for a certain bank i.e. which customer is going to leave this bank service. Fully-connected neural networks with different architectures will be explored and compared. Since this is a binary prediction , logistic regression may also works pretty well. Feel free to give it a shot~</p>
-                <a class="readmore" href="https://ericchen23.github.io/2018/08/Churn-rate-prediction.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-<p class="paginator">
-        <a href="https://ericchen23.github.io/index.html">&laquo;</a>
-    Page 2 / 3
-        <a href="https://ericchen23.github.io/index3.html">&raquo;</a>
-</p>
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://ericchen23.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="https://www.linkedin.com/in/hao-chen-auckland/">LinkedIn</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100008887505096">Facebook</a></li>
-                            <li><a href="https://github.com/haochen23">Github</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
 
 </body>
 </html>
