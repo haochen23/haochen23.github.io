@@ -77,22 +77,20 @@
     <div class="row">
         <div class="col-sm-9">
             <article>
-                <h2><a href="https://ericchen23.github.io/2019/05/pretrained-models-pytorch-keras.html">Using Pre-trained Models with PyTorch and Keras</a></h2>
+                <h2><a href="https://ericchen23.github.io/2019/05/transfer-learning-pytorch.html">Transfer Learning with Pytorch</a></h2>
                 <div class="summary"><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Transfer-Learning-with-Pytorch">Transfer Learning with Pytorch<a class="anchor-link" href="#Transfer-Learning-with-Pytorch">&#182;</a></h1><p>In this post, we'll explore how to perform transfer learning using Pytorch.</p>
 <p>We will use a subset of Food-11k that contains 11 different kinds of food categories. We will go over the dataset preparation, data augmentation and then steps to build the classifier. We use transfer learning to use the low level image features like edges, textures etc. learnt by a pretrained model, ResNet50, and then train our classifier to learn the higher level details in our dataset images. ResNet50 has already been trained on ImageNet with millions of images.</p>
-<p>The original Food-11k dataset constains about 11k images of 11 categories of foods. Training on the whole dataset will take hours. Hence, we are going to use a subset of this dataset. The 10 food categories include <strong>Bread, Dairy product, Dessert, Egg, Fried food, Meat, Noodles, Rice, Seafood, Soup, Vegetable</strong>. I've prepared the sub-dataset into <em>train, valid, test</em> set. In the <em>train</em> set, there are 10 folders for the 11 kinds of food, and each folder contains 100 images for a particular kind of food. <em>valid</em> and <em>test</em> set follow the same structure, but with 20 and 40 images per category respectively.</p>
-<p>So finally, we have <strong>1100 training images, 220 validation images, and 440 test images in 10 classes</strong>
-                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2019/05/pretrained-models-pytorch-keras.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2019/05/transfer-learning-pytorch.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://ericchen23.github.io/2019/04/transfer-learning-pytorch.html">Transfer Learning with PyTorch</a></h2>
-                <div class="summary"><p>In this post, we will try to use pre-trained models to do image classification. We will use two popular deep learning frameworks, PyTorch and Keras. Let's find out the workflow of using pre-trained models in these two frameworks. <br /><img alt="" height="80%" src="https://github.com/ericchen23/gpage-images/blob/master/Computer%20vision/classification.png?raw=true" width="80%" /></p>
-                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2019/04/transfer-learning-pytorch.html">more ...</a>
+                <h2><a href="https://ericchen23.github.io/2019/04/pre-trained-models-pytorch-keras.html">Using Pre-trained Models with Pytorch and Keras</a></h2>
+                <div class="summary"><p>In this post, we will try to use pre-trained models to do image classification. We will use two popular deep learning frameworks, PyTorch and Keras. Let's find out the workflow of using pre-trained models in these two frameworks. <br /><img alt="" height="60%" src="https://github.com/ericchen23/gpage-images/blob/master/Computer%20vision/classification.png?raw=true" width="60%" /></p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2019/04/pre-trained-models-pytorch-keras.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -178,9 +176,6 @@
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/analytics/">Analytics</a>
     </li>
-    <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/car-crash-prediction/">Car Crash Prediction</a>
-    </li>
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/computer-vision/">Computer Vision</a>
     </li>
@@ -193,7 +188,10 @@
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/deep-learning/">Deep Learning</a>
     </li>
-    <li class="list-group-item tag-1">
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/fine-tuning/">Fine-tuning</a>
+    </li>
+    <li class="list-group-item tag-2">
       <a href="https://ericchen23.github.io/label/image-classification/">Image Classification</a>
     </li>
     <li class="list-group-item tag-2">
@@ -233,7 +231,7 @@
       <a href="https://ericchen23.github.io/label/topic-modeling/">Topic Modeling</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/xgboost/">xgboost</a>
+      <a href="https://ericchen23.github.io/label/transfer-learning/">Transfer Learning</a>
     </li>
   </ul>
 </li>

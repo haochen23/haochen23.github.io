@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Transfer Learning with PyTorch - Eric Chen's Blog</title>
+    <title>Using Pre-trained Models with Pytorch and Keras - Eric Chen's Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
 
     <link href="https://ericchen23.github.io/images/icon2.png" rel="icon">
 
-<link rel="canonical" href="https://ericchen23.github.io/2019/04/transfer-learning-pytorch.html">
+<link rel="canonical" href="https://ericchen23.github.io/2019/04/pre-trained-models-pytorch-keras.html">
 
         <meta name="author" content="Hao Chen" />
         <meta name="keywords" content="Computer Vision,Deep Learning,Image Classification" />
@@ -18,8 +18,8 @@
 
         <meta property="og:site_name" content="Eric Chen's Blog" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Transfer Learning with PyTorch"/>
-        <meta property="og:url" content="https://ericchen23.github.io/2019/04/transfer-learning-pytorch.html"/>
+        <meta property="og:title" content="Using Pre-trained Models with Pytorch and Keras"/>
+        <meta property="og:url" content="https://ericchen23.github.io/2019/04/pre-trained-models-pytorch-keras.html"/>
         <meta property="og:description" content="In this post, we will try to use pre-trained models to do image classification. We will use two popular deep learning frameworks, PyTorch and Keras. Let&#39;s find out the workflow of using pre-trained models in these two frameworks."/>
         <meta property="article:published_time" content="2019-04-22" />
             <meta property="article:section" content="Computer Vision" />
@@ -87,16 +87,16 @@
         <div class="col-sm-9">
             <ol class="breadcrumb">
                 <li><a href="https://ericchen23.github.io" title="Eric Chen's Blog"><i class="fa fa-home fa-lg"></i></a></li>
-                <li class="active">Transfer Learning with PyTorch</li>
+                <li class="active">Using Pre-trained Models with Pytorch and Keras</li>
             </ol>
     <section id="content">
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="https://ericchen23.github.io/2019/04/transfer-learning-pytorch.html"
+                    <a href="https://ericchen23.github.io/2019/04/pre-trained-models-pytorch-keras.html"
                        rel="bookmark"
-                       title="Permalink to Transfer Learning with PyTorch">
-                        Transfer Learning with PyTorch
+                       title="Permalink to Using Pre-trained Models with Pytorch and Keras">
+                        Using Pre-trained Models with Pytorch and Keras
                     </a>
                 </h1>
             </header>
@@ -1397,10 +1397,10 @@ h6:hover .anchor-link {
 
  
  
-<div id="38799a45-6049-44cb-b6ee-d34130326f8a"></div>
+<div id="a7f228b2-8ad9-4cb8-a46f-a3fbf4ee3b27"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#38799a45-6049-44cb-b6ee-d34130326f8a');
+var element = $('#a7f228b2-8ad9-4cb8-a46f-a3fbf4ee3b27');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "5a2bd2ef42a64fb6b25dba731e6bb095", "version_major": 2, "version_minor": 0}
@@ -1819,10 +1819,10 @@ AlexNet(
 
  
  
-<div id="c59a2d93-8485-490a-9456-bbeb10aef4c2"></div>
+<div id="e45afbc1-2766-41dc-aa4b-c99f7b6ba652"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#c59a2d93-8485-490a-9456-bbeb10aef4c2');
+var element = $('#e45afbc1-2766-41dc-aa4b-c99f7b6ba652');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "1aacaa1543a746c08945421f78e16ad6", "version_major": 2, "version_minor": 0}
@@ -2154,10 +2154,10 @@ Input image size =  (1, 224, 224, 3)
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
     <ul>
-        <li><a href="https://ericchen23.github.io/2019/05/pretrained-models-pytorch-keras.html">Using Pre-trained Models with PyTorch and Keras</a></li>
         <li><a href="https://ericchen23.github.io/2020/05/instance-segmentation-mask-rcnn.html">Instance Segmentation using Mask-RCNN and PyTorch</a></li>
         <li><a href="https://ericchen23.github.io/2020/04/object-detection-faster-rcnn.html">Object Detection using Faster-RCNN PyTorch</a></li>
         <li><a href="https://ericchen23.github.io/2020/02/semantic-segmentation-pytorch.html">Semantic Segmentation using FCN and DeepLabV3</a></li>
+        <li><a href="https://ericchen23.github.io/2019/05/transfer-learning-pytorch.html">Transfer Learning with Pytorch</a></li>
     </ul>
 </section>
     <hr />
@@ -2217,9 +2217,6 @@ Input image size =  (1, 224, 224, 3)
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/analytics/">Analytics</a>
     </li>
-    <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/car-crash-prediction/">Car Crash Prediction</a>
-    </li>
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/computer-vision/">Computer Vision</a>
     </li>
@@ -2232,7 +2229,10 @@ Input image size =  (1, 224, 224, 3)
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/deep-learning/">Deep Learning</a>
     </li>
-    <li class="list-group-item tag-1">
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/fine-tuning/">Fine-tuning</a>
+    </li>
+    <li class="list-group-item tag-2">
       <a href="https://ericchen23.github.io/label/image-classification/">Image Classification</a>
     </li>
     <li class="list-group-item tag-2">
@@ -2272,7 +2272,7 @@ Input image size =  (1, 224, 224, 3)
       <a href="https://ericchen23.github.io/label/topic-modeling/">Topic Modeling</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/xgboost/">xgboost</a>
+      <a href="https://ericchen23.github.io/label/transfer-learning/">Transfer Learning</a>
     </li>
   </ul>
 </li>

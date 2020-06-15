@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Articles by Hao Chen - Eric Chen's Blog</title>
+    <title>Transfer Learning - Eric Chen's Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,7 +11,8 @@
     <link href="https://ericchen23.github.io/images/icon2.png" rel="icon">
 
 
-        <meta name="author" content="Eric Chen" />
+    <meta name="author" content="Eric Chen" />
+    <meta name="keywords" content="Transfer Learning" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="Eric Chen's Blog" />
@@ -76,32 +77,23 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-        <ol class="breadcrumb">
-            <li><a href="https://ericchen23.github.io" title="Eric Chen's Blog"><i class="fa fa-home fa-lg"></i></a></li>
-            <li><a href="https://ericchen23.github.io/" title="Authors">Authors</a></li>
-            <li class="active">Eric Chen</li>
-        </ol>
+    <ol class="breadcrumb">
+        <li><a href="https://ericchen23.github.io" title="Eric Chen's Blog"><i class="fa fa-home fa-lg"></i></a></li>
+        <li><a href="https://ericchen23.github.io/label/" title="Tags">Tags</a></li>
+        <li class="active">Transfer Learning</li>
+    </ol>
             <article>
-                <h2><a href="https://ericchen23.github.io/2018/08/SAT-analysis.html">SAT Results Analysis NYC</a></h2>
-                <div class="summary"><p>The SAT, or Scholastic Aptitude Test, is a test that high schoolers take in the US before applying to college. Colleges take the test scores into account when making admissions decisions, so it's fairly important to do well on. The test is divided into 3 sections, each of which is scored out of 800 points. The total score is out of 2400 (although this has changed back and forth a few times, the scores in this dataset are out of 2400). High schools are often ranked by their average SAT scores, and high SAT scores are considered a sign of how good a school district is.</p>
-                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/08/SAT-analysis.html">more ...</a>
+                <h2><a href="https://ericchen23.github.io/2019/05/transfer-learning-pytorch.html">Transfer Learning with Pytorch</a></h2>
+                <div class="summary"><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Transfer-Learning-with-Pytorch">Transfer Learning with Pytorch<a class="anchor-link" href="#Transfer-Learning-with-Pytorch">&#182;</a></h1><p>In this post, we'll explore how to perform transfer learning using Pytorch.</p>
+<p>We will use a subset of Food-11k that contains 11 different kinds of food categories. We will go over the dataset preparation, data augmentation and then steps to build the classifier. We use transfer learning to use the low level image features like edges, textures etc. learnt by a pretrained model, ResNet50, and then train our classifier to learn the higher level details in our dataset images. ResNet50 has already been trained on ImageNet with millions of images.</p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2019/05/transfer-learning-pytorch.html">more ...</a>
                 </div>
             </article>
             <hr/>
 
-        <ul class="pagination">
-                <li class="prev"><a href="https://ericchen23.github.io/author/hao-chen3.html">&laquo;</a>
-                </li>
-                    <li class=""><a
-                            href="https://ericchen23.github.io/author/hao-chen.html">1</a></li>
-                    <li class=""><a
-                            href="https://ericchen23.github.io/author/hao-chen2.html">2</a></li>
-                    <li class=""><a
-                            href="https://ericchen23.github.io/author/hao-chen3.html">3</a></li>
-                    <li class="active"><a
-                            href="https://ericchen23.github.io/author/hao-chen4.html">4</a></li>
-                <li class="next disabled"><a href="#">&raquo;</a></li>
-        </ul>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -132,11 +124,7 @@
 <li class="list-group-item">
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
   <ul class="list-group" id="recentposts">
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2020/05/instance-segmentation-mask-rcnn.html">Instance Segmentation using Mask-RCNN and PyTorch</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2020/04/object-detection-faster-rcnn.html">Object Detection using Faster-RCNN PyTorch</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2020/02/semantic-segmentation-pytorch.html">Semantic Segmentation using FCN and DeepLabV3</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2019/09/NLP-twitter-sentiment.html">Twitter Sentiment Modeling on Detecting Racist or Sexist tweets</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2019/08/NLP-topic-modeling.html">Modeling on Amazon Phone and Accessories Reviews using NLP</a></li>
+    <li class="list-group-item"><a href="https://ericchen23.github.io/2019/05/transfer-learning-pytorch.html">Transfer Learning with Pytorch</a></li>
   </ul>
 </li>
 <!-- End Sidebar/Recent Posts -->
@@ -229,7 +217,7 @@
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2020 Eric Chen
+         <div class="col-xs-10">&copy; 2019 Eric Chen
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>

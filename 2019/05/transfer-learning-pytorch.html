@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Using Pre-trained Models with PyTorch and Keras - Eric Chen's Blog</title>
+    <title>Transfer Learning with Pytorch - Eric Chen's Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,22 +10,23 @@
 
     <link href="https://ericchen23.github.io/images/icon2.png" rel="icon">
 
-<link rel="canonical" href="https://ericchen23.github.io/2019/05/pretrained-models-pytorch-keras.html">
+<link rel="canonical" href="https://ericchen23.github.io/2019/05/transfer-learning-pytorch.html">
 
         <meta name="author" content="Hao Chen" />
-        <meta name="keywords" content="Computer Vision,Deep Learning,Image Classification" />
-        <meta name="description" content="Transfer Learning with Pytorch¶In this post, we&#39;ll explore how to perform transfer learning using Pytorch. We will use a subset of Food-11k that contains 11 different kinds of food categories. We will go over the dataset preparation, data augmentation and then steps to build the classifier. We use transfer learning to use the low level image features like edges, textures etc. learnt by a pretrained model, ResNet50, and then train our classifier to learn the higher level details in our dataset images. ResNet50 has already been trained on ImageNet with millions of images. The original Food-11k dataset constains about 11k images of 11 categories of foods. Training on the whole dataset will take hours. Hence, we are going to use a subset of this dataset. The 10 food categories include Bread, Dairy product, Dessert, Egg, Fried food, Meat, Noodles, Rice, Seafood, Soup, Vegetable. I&#39;ve prepared the sub-dataset into train, valid, test set. In the train set, there are 10 folders for the 11 kinds of food, and each folder contains 100 images for a particular kind of food. valid and test set follow the same structure, but with 20 and 40 images per category respectively. So finally, we have 1100 training images, 220 validation images, and 440 test images in 10 classes" />
+        <meta name="keywords" content="Computer Vision,Deep Learning,Transfer Learning,Fine-tuning" />
+        <meta name="description" content="Transfer Learning with Pytorch¶In this post, we&#39;ll explore how to perform transfer learning using Pytorch. We will use a subset of Food-11k that contains 11 different kinds of food categories. We will go over the dataset preparation, data augmentation and then steps to build the classifier. We use transfer learning to use the low level image features like edges, textures etc. learnt by a pretrained model, ResNet50, and then train our classifier to learn the higher level details in our dataset images. ResNet50 has already been trained on ImageNet with millions of images." />
 
         <meta property="og:site_name" content="Eric Chen's Blog" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Using Pre-trained Models with PyTorch and Keras"/>
-        <meta property="og:url" content="https://ericchen23.github.io/2019/05/pretrained-models-pytorch-keras.html"/>
-        <meta property="og:description" content="Transfer Learning with Pytorch¶In this post, we&#39;ll explore how to perform transfer learning using Pytorch. We will use a subset of Food-11k that contains 11 different kinds of food categories. We will go over the dataset preparation, data augmentation and then steps to build the classifier. We use transfer learning to use the low level image features like edges, textures etc. learnt by a pretrained model, ResNet50, and then train our classifier to learn the higher level details in our dataset images. ResNet50 has already been trained on ImageNet with millions of images. The original Food-11k dataset constains about 11k images of 11 categories of foods. Training on the whole dataset will take hours. Hence, we are going to use a subset of this dataset. The 10 food categories include Bread, Dairy product, Dessert, Egg, Fried food, Meat, Noodles, Rice, Seafood, Soup, Vegetable. I&#39;ve prepared the sub-dataset into train, valid, test set. In the train set, there are 10 folders for the 11 kinds of food, and each folder contains 100 images for a particular kind of food. valid and test set follow the same structure, but with 20 and 40 images per category respectively. So finally, we have 1100 training images, 220 validation images, and 440 test images in 10 classes"/>
+        <meta property="og:title" content="Transfer Learning with Pytorch"/>
+        <meta property="og:url" content="https://ericchen23.github.io/2019/05/transfer-learning-pytorch.html"/>
+        <meta property="og:description" content="Transfer Learning with Pytorch¶In this post, we&#39;ll explore how to perform transfer learning using Pytorch. We will use a subset of Food-11k that contains 11 different kinds of food categories. We will go over the dataset preparation, data augmentation and then steps to build the classifier. We use transfer learning to use the low level image features like edges, textures etc. learnt by a pretrained model, ResNet50, and then train our classifier to learn the higher level details in our dataset images. ResNet50 has already been trained on ImageNet with millions of images."/>
         <meta property="article:published_time" content="2019-05-21" />
             <meta property="article:section" content="Computer Vision" />
             <meta property="article:tag" content="Computer Vision" />
             <meta property="article:tag" content="Deep Learning" />
-            <meta property="article:tag" content="Image Classification" />
+            <meta property="article:tag" content="Transfer Learning" />
+            <meta property="article:tag" content="Fine-tuning" />
             <meta property="article:author" content="Hao Chen" />
 
 
@@ -87,16 +88,16 @@
         <div class="col-sm-9">
             <ol class="breadcrumb">
                 <li><a href="https://ericchen23.github.io" title="Eric Chen's Blog"><i class="fa fa-home fa-lg"></i></a></li>
-                <li class="active">Using Pre-trained Models with PyTorch and Keras</li>
+                <li class="active">Transfer Learning with Pytorch</li>
             </ol>
     <section id="content">
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="https://ericchen23.github.io/2019/05/pretrained-models-pytorch-keras.html"
+                    <a href="https://ericchen23.github.io/2019/05/transfer-learning-pytorch.html"
                        rel="bookmark"
-                       title="Permalink to Using Pre-trained Models with PyTorch and Keras">
-                        Using Pre-trained Models with PyTorch and Keras
+                       title="Permalink to Transfer Learning with Pytorch">
+                        Transfer Learning with Pytorch
                     </a>
                 </h1>
             </header>
@@ -120,7 +121,9 @@
         /
 	<a href="https://ericchen23.github.io/label/deep-learning/">Deep Learning</a>
         /
-	<a href="https://ericchen23.github.io/label/image-classification/">Image Classification</a>
+	<a href="https://ericchen23.github.io/label/transfer-learning/">Transfer Learning</a>
+        /
+	<a href="https://ericchen23.github.io/label/fine-tuning/">Fine-tuning</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -2312,10 +2315,10 @@ Predcition 3 : Meat , Score:  0.0022846945
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
     <ul>
-        <li><a href="https://ericchen23.github.io/2019/04/transfer-learning-pytorch.html">Transfer Learning with PyTorch</a></li>
         <li><a href="https://ericchen23.github.io/2020/05/instance-segmentation-mask-rcnn.html">Instance Segmentation using Mask-RCNN and PyTorch</a></li>
         <li><a href="https://ericchen23.github.io/2020/04/object-detection-faster-rcnn.html">Object Detection using Faster-RCNN PyTorch</a></li>
         <li><a href="https://ericchen23.github.io/2020/02/semantic-segmentation-pytorch.html">Semantic Segmentation using FCN and DeepLabV3</a></li>
+        <li><a href="https://ericchen23.github.io/2019/04/pre-trained-models-pytorch-keras.html">Using Pre-trained Models with Pytorch and Keras</a></li>
     </ul>
 </section>
     <hr />
@@ -2375,9 +2378,6 @@ Predcition 3 : Meat , Score:  0.0022846945
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/analytics/">Analytics</a>
     </li>
-    <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/car-crash-prediction/">Car Crash Prediction</a>
-    </li>
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/computer-vision/">Computer Vision</a>
     </li>
@@ -2390,7 +2390,10 @@ Predcition 3 : Meat , Score:  0.0022846945
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/deep-learning/">Deep Learning</a>
     </li>
-    <li class="list-group-item tag-1">
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/fine-tuning/">Fine-tuning</a>
+    </li>
+    <li class="list-group-item tag-2">
       <a href="https://ericchen23.github.io/label/image-classification/">Image Classification</a>
     </li>
     <li class="list-group-item tag-2">
@@ -2430,7 +2433,7 @@ Predcition 3 : Meat , Score:  0.0022846945
       <a href="https://ericchen23.github.io/label/topic-modeling/">Topic Modeling</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/xgboost/">xgboost</a>
+      <a href="https://ericchen23.github.io/label/transfer-learning/">Transfer Learning</a>
     </li>
   </ul>
 </li>
