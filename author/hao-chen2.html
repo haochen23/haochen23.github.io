@@ -52,6 +52,7 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
+                    <li><a href="/category/computer-vision/index.html">Computer Vision</a></li>
                     <li><a href="/category/data-science/index.html">Data Science</a></li>
                     <li><a href="/category/nlp/index.html">NLP</a></li>
             </ul>
@@ -81,37 +82,43 @@
             <li class="active">Eric Chen</li>
         </ol>
             <article>
-                <h2><a href="https://ericchen23.github.io/2018/11/50-visualization-part2.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part II</a></h2>
-                <div class="summary"><p>This post summarizes the top 50 most valuable Matplotlib &amp; Seaborn data visualizations in data science. It can be taken as a data visualization handbook for you to look up for useful visulaization.  The 50 visualizations are categorized into 7 different application scenarios, and this post would mainly focuses on the first two categories, shown as follows: Correlation, Deviation, Ranking, Distribution, Composition, Change, and Groups. The whole content is divided into three parts, and this post is Part II. We will cover Ranking and Distribution in this post.<br /><img alt="" height="60%" src="https://github.com/ericchen23/gpage-images/blob/master/Data%20Science/visual-2.png?raw=true" width="60%" /></p>
-                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/11/50-visualization-part2.html">more ...</a>
+                <h2><a href="https://ericchen23.github.io/2019/05/pretrained-models-pytorch-keras.html">Using Pre-trained Models with PyTorch and Keras</a></h2>
+                <div class="summary"><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Transfer-Learning-with-Pytorch">Transfer Learning with Pytorch<a class="anchor-link" href="#Transfer-Learning-with-Pytorch">&#182;</a></h1><p>In this post, we'll explore how to perform transfer learning using Pytorch.</p>
+<p>We will use a subset of Food-11k that contains 11 different kinds of food categories. We will go over the dataset preparation, data augmentation and then steps to build the classifier. We use transfer learning to use the low level image features like edges, textures etc. learnt by a pretrained model, ResNet50, and then train our classifier to learn the higher level details in our dataset images. ResNet50 has already been trained on ImageNet with millions of images.</p>
+<p>The original Food-11k dataset constains about 11k images of 11 categories of foods. Training on the whole dataset will take hours. Hence, we are going to use a subset of this dataset. The 10 food categories include <strong>Bread, Dairy product, Dessert, Egg, Fried food, Meat, Noodles, Rice, Seafood, Soup, Vegetable</strong>. I've prepared the sub-dataset into <em>train, valid, test</em> set. In the <em>train</em> set, there are 10 folders for the 11 kinds of food, and each folder contains 100 images for a particular kind of food. <em>valid</em> and <em>test</em> set follow the same structure, but with 20 and 40 images per category respectively.</p>
+<p>So finally, we have <strong>1100 training images, 220 validation images, and 440 test images in 10 classes</strong>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2019/05/pretrained-models-pytorch-keras.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://ericchen23.github.io/2018/10/50-visualization-part1.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part I</a></h2>
-                <div class="summary"><p>This post summarizes the top 50 most valuable Matplotlib &amp; Seaborn data visualizations in data science. It can be taken as a data visualization handbook for you to look up for useful visulaization.  The 50 visualizations are categorized into 7 different application scenarios, and this post would mainly focuses on the first two categories, shown as follows: Correlation, Deviation, Ranking, Distribution, Composition, Change, and Groups. The whole content is divided into three parts, and this post is Part I. We will cover the first two categories in Part I.<br /><img alt="" height="60%" src="https://github.com/ericchen23/gpage-images/blob/master/Data%20Science/visual-1.png?raw=true" width="60%" /></p>
-                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/10/50-visualization-part1.html">more ...</a>
+                <h2><a href="https://ericchen23.github.io/2019/04/transfer-learning-pytorch.html">Transfer Learning with PyTorch</a></h2>
+                <div class="summary"><p>In this post, we will try to use pre-trained models to do image classification. We will use two popular deep learning frameworks, PyTorch and Keras. Let's find out the workflow of using pre-trained models in these two frameworks. <br /><img alt="" height="80%" src="https://github.com/ericchen23/gpage-images/blob/master/Computer%20vision/classification.png?raw=true" width="80%" /></p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2019/04/transfer-learning-pytorch.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://ericchen23.github.io/2018/10/user-booking-prediction.html">New Airbnb User Booking Prediction</a></h2>
-                <div class="summary"><p>The basic aim of this notebook is to predict new Airbnb users' first destination country based a historical dataset. This work involves a considerable amount of data cleansing work. After the dataset is cleaned and preprocessed, I use a popular xgboost classifier as the prediction model, and grid searching with 3-fold cross-validation to find the most suitable parameters for the classifier. If you are interested in finding more about the dataset or the xgboost classifier, please follow along this article.</p>
-                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/10/user-booking-prediction.html">more ...</a>
+                <h2><a href="https://ericchen23.github.io/2019/02/time-series-analysis-superstore-sales.html">Time Series Analysis on Superstore Sales Data</a></h2>
+                <div class="summary"><p>Time Series Analysis (TSA) is an important part in the field of data science. TSA uses methods for analyzing time series data in order to identify useful patterns and extract meaningful statistics of the data. There are two major goals of TSA: 1) identifing patterns or features represented by the data; and 2) forecasting (using a model to predict future values based on previous data). In this article, we will do a complete machine learning pipeline on analysis time series data. We will use both ARIMA model and Prophet model to predict superstore sales data. These two models are very important in analyzing time series data.<br /><img alt="" height="80%" src="https://github.com/ericchen23/gpage-images/blob/master/Data%20Science/time-series.png?raw=true" width="80%" /></p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2019/02/time-series-analysis-superstore-sales.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://ericchen23.github.io/2018/09/Naive-Bayes.html">Indian diabetes database modeling using Naive Bayes</a></h2>
-                <div class="summary"><p>Coding from scratch. To better understand the process of Naive Bayes model training. And in the end, we make another Naive Bayes Classifier through normal workflow using sklearn. In machine learning, naive Bayes classifiers are a family of simple "probabilistic classifiers" based on applying Bayes' theorem with strong (naive) independence assumptions between the features. A naive Bayes classifier considers each of these features to be independent to each other. That why it is referred as "Naive".</p>
-                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/09/Naive-Bayes.html">more ...</a>
+                <h2><a href="https://ericchen23.github.io/2019/01/car-crash-prediction-nz.html">Car Crash Prediction in NZ - Machine Learning Pipeline</a></h2>
+                <div class="summary"><p>In this article, we will do a complete machine learning pipeline from getting data through APIs, performing exploratory data analysis and formulating a real-world problem into a machine learning model. The dataset we use for this post is New Zealand Crash Analysis Dataset which is updated on a quarterly basis by the Transport Agency. The dataset was last updated on October 2018 (from January 2000). It contains all traffic crashes as reported to the Transport Agency by the NZ police. However, not all crashes are reported NZ police. A big portion of minor car crashes are settled on site by the parties without reporting to the police. The level of reporting increases with the severity of the crash. Due to the nature of non-fatal crashes it is believed that these are under-reported.<br /><img alt="" height="70%" src="https://github.com/ericchen23/gpage-images/blob/master/Data%20Science/nz-car-crash.png?raw=true" width="70%" /></p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2019/01/car-crash-prediction-nz.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://ericchen23.github.io/2018/08/Churn-rate-prediction.html">Churn Rate Prediction Using Neural Networks</a></h2>
-                <div class="summary"><p>The basic aim of this post is to predict customer churn for a certain bank i.e. which customer is going to leave this bank service. Fully-connected neural networks with different architectures will be explored and compared. Since this is a binary prediction , logistic regression may also works pretty well. Feel free to give it a shot~</p>
-                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/08/Churn-rate-prediction.html">more ...</a>
+                <h2><a href="https://ericchen23.github.io/2018/12/50-visualization-part3.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part III</a></h2>
+                <div class="summary"><p>This post summarizes the top 50 most valuable Matplotlib &amp; Seaborn data visualizations in data science.<br />It can be taken as a data visualization handbook for you to look up for useful visulaization.  The 50 visualizations are categorized into 7 different application scenarios, and this post would mainly focuses on the first two categories, shown as follows: Correlation, Deviation, Ranking, Distribution, Composition, Change, and Groups. The whole content is divided into three parts, and this post is Part III. We will cover the last three categories.<br /><img alt="" height="60%" src="https://github.com/ericchen23/gpage-images/blob/master/Data%20Science/visual-3.png?raw=true" width="60%" /></p>
+                    <a class="btn btn-default btn-xs" href="https://ericchen23.github.io/2018/12/50-visualization-part3.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -125,6 +132,8 @@
                             href="https://ericchen23.github.io/author/hao-chen2.html">2</a></li>
                     <li class=""><a
                             href="https://ericchen23.github.io/author/hao-chen3.html">3</a></li>
+                    <li class=""><a
+                            href="https://ericchen23.github.io/author/hao-chen4.html">4</a></li>
                 <li class="next"><a
                         href="https://ericchen23.github.io/author/hao-chen3.html">&raquo;</a></li>
         </ul>
@@ -158,11 +167,11 @@
 <li class="list-group-item">
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
   <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="https://ericchen23.github.io/2020/05/instance-segmentation-mask-rcnn.html">Instance Segmentation using Mask-RCNN and PyTorch</a></li>
+    <li class="list-group-item"><a href="https://ericchen23.github.io/2020/04/object-detection-faster-rcnn.html">Object Detection using Faster-RCNN PyTorch</a></li>
+    <li class="list-group-item"><a href="https://ericchen23.github.io/2020/02/semantic-segmentation-pytorch.html">Semantic Segmentation using FCN and DeepLabV3</a></li>
     <li class="list-group-item"><a href="https://ericchen23.github.io/2019/09/NLP-twitter-sentiment.html">Twitter Sentiment Modeling on Detecting Racist or Sexist tweets</a></li>
     <li class="list-group-item"><a href="https://ericchen23.github.io/2019/08/NLP-topic-modeling.html">Modeling on Amazon Phone and Accessories Reviews using NLP</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2019/02/time-series-analysis-superstore-sales.html">Time Series Analysis on Superstore Sales Data</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2019/01/car-crash-prediction-nz.html">Car Crash Prediction in NZ - Machine Learning Pipeline</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2018/12/50-visualization-part3.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part III</a></li>
   </ul>
 </li>
 <!-- End Sidebar/Recent Posts -->
@@ -178,10 +187,25 @@
       <a href="https://ericchen23.github.io/label/car-crash-prediction/">Car Crash Prediction</a>
     </li>
     <li class="list-group-item tag-1">
+      <a href="https://ericchen23.github.io/label/computer-vision/">Computer Vision</a>
+    </li>
+    <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/data-science/">Data Science</a>
     </li>
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/data-visualization/">Data Visualization</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://ericchen23.github.io/label/deep-learning/">Deep Learning</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://ericchen23.github.io/label/image-classification/">Image Classification</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/instance-segmentation/">Instance Segmentation</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/mask-rcnn/">Mask-RCNN</a>
     </li>
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/matplotlib/">Matplotlib</a>
@@ -190,10 +214,19 @@
       <a href="https://ericchen23.github.io/label/nlp/">NLP</a>
     </li>
     <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/object-detection/">Object Detection</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://ericchen23.github.io/label/pytorch/">Pytorch</a>
+    </li>
+    <li class="list-group-item tag-2">
       <a href="https://ericchen23.github.io/label/sales-forecasting/">Sales Forecasting</a>
     </li>
     <li class="list-group-item tag-1">
       <a href="https://ericchen23.github.io/label/seaborn/">Seaborn</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://ericchen23.github.io/label/semantic-segmentation/">Semantic Segmentation</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://ericchen23.github.io/label/sentiment-analysis/">Sentiment analysis</a>
@@ -231,7 +264,7 @@
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2019 Eric Chen
+         <div class="col-xs-10">&copy; 2020 Eric Chen
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
