@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Eric Chen's Blog</title><link href="https://ericchen23.github.io/" rel="alternate"></link><link href="https://ericchen23.github.io/feeds/nlp.atom.xml" rel="self"></link><id>https://ericchen23.github.io/</id><updated>2019-09-05T15:41:00+12:00</updated><entry><title>Twitter Sentiment Modeling on Detecting Racist or Sexist tweets</title><link href="https://ericchen23.github.io/2019/09/NLP-twitter-sentiment.html" rel="alternate"></link><published>2019-09-05T15:41:00+12:00</published><updated>2019-09-05T15:41:00+12:00</updated><author><name>Hao Chen</name></author><id>tag:ericchen23.github.io,2019-09-05:2019/09/NLP-twitter-sentiment.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Eric Chen's Blog</title><link href="https://haochen23.github.io/" rel="alternate"></link><link href="https://haochen23.github.io/feeds/nlp.atom.xml" rel="self"></link><id>https://haochen23.github.io/</id><updated>2019-09-05T15:41:00+12:00</updated><entry><title>Twitter Sentiment Modeling on Detecting Racist or Sexist tweets</title><link href="https://haochen23.github.io/2019/09/NLP-twitter-sentiment.html" rel="alternate"></link><published>2019-09-05T15:41:00+12:00</published><updated>2019-09-05T15:41:00+12:00</updated><author><name>Hao Chen</name></author><id>tag:haochen23.github.io,2019-09-05:2019/09/NLP-twitter-sentiment.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -2297,7 +2297,7 @@ Name: tidy_tweet, dtype: object&lt;/pre&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</summary><category term="Data Science"></category><category term="NLP"></category><category term="Sentiment analysis"></category></entry><entry><title>Modeling on Amazon Phone and Accessories Reviews using NLP</title><link href="https://ericchen23.github.io/2019/08/NLP-topic-modeling.html" rel="alternate"></link><published>2019-08-03T12:53:00+12:00</published><updated>2019-08-03T12:53:00+12:00</updated><author><name>Hao Chen</name></author><id>tag:ericchen23.github.io,2019-08-03:2019/08/NLP-topic-modeling.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
+</summary><category term="Data Science"></category><category term="NLP"></category><category term="Sentiment analysis"></category></entry><entry><title>Modeling on Amazon Phone and Accessories Reviews using NLP</title><link href="https://haochen23.github.io/2019/08/NLP-topic-modeling.html" rel="alternate"></link><published>2019-08-03T12:53:00+12:00</published><updated>2019-08-03T12:53:00+12:00</updated><author><name>Hao Chen</name></author><id>tag:haochen23.github.io,2019-08-03:2019/08/NLP-topic-modeling.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *

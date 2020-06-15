@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="https://ericchen23.github.io/images/icon2.png" rel="icon">
+    <link href="https://haochen23.github.io/images/icon2.png" rel="icon">
 
-<link rel="canonical" href="https://ericchen23.github.io/2019/09/NLP-twitter-sentiment.html">
+<link rel="canonical" href="https://haochen23.github.io/2019/09/NLP-twitter-sentiment.html">
 
         <meta name="author" content="Hao Chen" />
         <meta name="keywords" content="Data Science,NLP,Sentiment analysis" />
@@ -19,7 +19,7 @@
         <meta property="og:site_name" content="Eric Chen's Blog" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Twitter Sentiment Modeling on Detecting Racist or Sexist tweets"/>
-        <meta property="og:url" content="https://ericchen23.github.io/2019/09/NLP-twitter-sentiment.html"/>
+        <meta property="og:url" content="https://haochen23.github.io/2019/09/NLP-twitter-sentiment.html"/>
         <meta property="og:description" content="Sentiment Analysis refers to the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information. Sentiment analysis on tweets can be extremely useful. By analyzing the tweets, we can find the sentiment of people on certain affair, understand people&#39;s opinion. Also it can help us make right strategies/reactions. In this post, our main goal is to build a model to identify tweets with racist or sexist sentiment."/>
         <meta property="article:published_time" content="2019-09-05" />
             <meta property="article:section" content="NLP" />
@@ -31,18 +31,18 @@
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://ericchen23.github.io/theme/css/bootstrap.flatly.min.css" type="text/css"/>
-    <link href="https://ericchen23.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://haochen23.github.io/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="https://haochen23.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="https://ericchen23.github.io/theme/css/pygments/emacs.css" rel="stylesheet">
-    <link href="https://ericchen23.github.io/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://ericchen23.github.io/theme/css/style.css" type="text/css"/>
-        <link href="https://ericchen23.github.io/theme/css/custom.css" rel="stylesheet">
+    <link href="https://haochen23.github.io/theme/css/pygments/emacs.css" rel="stylesheet">
+    <link href="https://haochen23.github.io/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://haochen23.github.io/theme/css/style.css" type="text/css"/>
+        <link href="https://haochen23.github.io/theme/css/custom.css" rel="stylesheet">
 
-        <link href="https://ericchen23.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="https://haochen23.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="Eric Chen's Blog ATOM Feed"/>
 
-        <link href="https://ericchen23.github.io/feeds/%s.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="https://haochen23.github.io/feeds/%s.atom.xml" type="application/atom+xml" rel="alternate"
               title="Eric Chen's Blog NLP ATOM Feed"/>
 </head>
 <body>
@@ -56,8 +56,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="https://ericchen23.github.io/" class="navbar-brand">
-<img class="img-responsive pull-left gap-right" src="https://ericchen23.github.io/images/icon.jpg" width="28"/> Eric Chen's Blog            </a>
+            <a href="https://haochen23.github.io/" class="navbar-brand">
+<img class="img-responsive pull-left gap-right" src="https://haochen23.github.io/images/icon.jpg" width="28"/> Eric Chen's Blog            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
@@ -71,7 +71,7 @@
                   <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
                 </form></span>
               </li>
-              <li><a href="https://ericchen23.github.io/archives/"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+              <li><a href="https://haochen23.github.io/archives/"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -86,14 +86,14 @@
     <div class="row">
         <div class="col-sm-9">
             <ol class="breadcrumb">
-                <li><a href="https://ericchen23.github.io" title="Eric Chen's Blog"><i class="fa fa-home fa-lg"></i></a></li>
+                <li><a href="https://haochen23.github.io" title="Eric Chen's Blog"><i class="fa fa-home fa-lg"></i></a></li>
                 <li class="active">Twitter Sentiment Modeling on Detecting Racist or Sexist tweets</li>
             </ol>
     <section id="content">
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="https://ericchen23.github.io/2019/09/NLP-twitter-sentiment.html"
+                    <a href="https://haochen23.github.io/2019/09/NLP-twitter-sentiment.html"
                        rel="bookmark"
                        title="Permalink to Twitter Sentiment Modeling on Detecting Racist or Sexist tweets">
                         Twitter Sentiment Modeling on Detecting Racist or Sexist tweets
@@ -111,16 +111,16 @@
 
 
             <span class="label label-default">By</span>
-            <a href="https://ericchen23.github.io/author/hao-chen.html"><i class="fa fa-user"></i> Hao Chen</a>
+            <a href="https://haochen23.github.io/author/hao-chen.html"><i class="fa fa-user"></i> Hao Chen</a>
 
 
 
 <span class="label label-default">Tags</span>
-	<a href="https://ericchen23.github.io/label/data-science/">Data Science</a>
+	<a href="https://haochen23.github.io/label/data-science/">Data Science</a>
         /
-	<a href="https://ericchen23.github.io/label/nlp/">NLP</a>
+	<a href="https://haochen23.github.io/label/nlp/">NLP</a>
         /
-	<a href="https://ericchen23.github.io/label/sentiment-analysis/">Sentiment analysis</a>
+	<a href="https://haochen23.github.io/label/sentiment-analysis/">Sentiment analysis</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -2428,11 +2428,11 @@ Name: tidy_tweet, dtype: object</pre>
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
     <ul>
-        <li><a href="https://ericchen23.github.io/2019/08/NLP-topic-modeling.html">Modeling on Amazon Phone and Accessories Reviews using NLP</a></li>
-        <li><a href="https://ericchen23.github.io/2019/01/car-crash-prediction-nz.html">Car Crash Prediction in NZ - Machine Learning Pipeline</a></li>
-        <li><a href="https://ericchen23.github.io/2018/12/50-visualization-part3.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part III</a></li>
-        <li><a href="https://ericchen23.github.io/2018/11/50-visualization-part2.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part II</a></li>
-        <li><a href="https://ericchen23.github.io/2018/10/50-visualization-part1.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part I</a></li>
+        <li><a href="https://haochen23.github.io/2019/08/NLP-topic-modeling.html">Modeling on Amazon Phone and Accessories Reviews using NLP</a></li>
+        <li><a href="https://haochen23.github.io/2019/01/car-crash-prediction-nz.html">Car Crash Prediction in NZ - Machine Learning Pipeline</a></li>
+        <li><a href="https://haochen23.github.io/2018/12/50-visualization-part3.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part III</a></li>
+        <li><a href="https://haochen23.github.io/2018/11/50-visualization-part2.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part II</a></li>
+        <li><a href="https://haochen23.github.io/2018/10/50-visualization-part1.html">Valuable Matplotlib & Seaborn Visualization Handbook, Part I</a></li>
     </ul>
 </section>
     <hr />
@@ -2451,7 +2451,7 @@ Name: tidy_tweet, dtype: object</pre>
             <aside>
 <div id="aboutme">
         <p>
-            <img width="100%" class="img-thumbnail" src="https://ericchen23.github.io/images/profile.jpg"/>
+            <img width="100%" class="img-thumbnail" src="https://haochen23.github.io/images/profile.jpg"/>
         </p>
     <p>
       <strong>About Eric Chen</strong><br/>
@@ -2466,7 +2466,6 @@ Name: tidy_tweet, dtype: object</pre>
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
   <ul class="list-group" id="social">
     <li class="list-group-item"><a href="https://www.linkedin.com/in/hao-chen-auckland/"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
-    <li class="list-group-item"><a href="https://www.facebook.com/profile.php?id=100008887505096"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
     <li class="list-group-item"><a href="https://github.com/haochen23"><i class="fa fa-github-square fa-lg"></i> Github</a></li>
   </ul>
 </li>
@@ -2476,78 +2475,78 @@ Name: tidy_tweet, dtype: object</pre>
 <li class="list-group-item">
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
   <ul class="list-group" id="recentposts">
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2020/05/instance-segmentation-mask-rcnn.html">Instance Segmentation using Mask-RCNN and PyTorch</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2020/04/object-detection-faster-rcnn.html">Object Detection using Faster-RCNN PyTorch</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2020/02/semantic-segmentation-pytorch.html">Semantic Segmentation using FCN and DeepLabV3</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2019/09/NLP-twitter-sentiment.html">Twitter Sentiment Modeling on Detecting Racist or Sexist tweets</a></li>
-    <li class="list-group-item"><a href="https://ericchen23.github.io/2019/08/NLP-topic-modeling.html">Modeling on Amazon Phone and Accessories Reviews using NLP</a></li>
+    <li class="list-group-item"><a href="https://haochen23.github.io/2020/05/instance-segmentation-mask-rcnn.html">Instance Segmentation using Mask-RCNN and PyTorch</a></li>
+    <li class="list-group-item"><a href="https://haochen23.github.io/2020/04/object-detection-faster-rcnn.html">Object Detection using Faster-RCNN PyTorch</a></li>
+    <li class="list-group-item"><a href="https://haochen23.github.io/2020/02/semantic-segmentation-pytorch.html">Semantic Segmentation using FCN and DeepLabV3</a></li>
+    <li class="list-group-item"><a href="https://haochen23.github.io/2019/09/NLP-twitter-sentiment.html">Twitter Sentiment Modeling on Detecting Racist or Sexist tweets</a></li>
+    <li class="list-group-item"><a href="https://haochen23.github.io/2019/08/NLP-topic-modeling.html">Modeling on Amazon Phone and Accessories Reviews using NLP</a></li>
   </ul>
 </li>
 <!-- End Sidebar/Recent Posts -->
 
 <!-- Sidebar/Tag Cloud -->
 <li class="list-group-item">
-  <a href="https://ericchen23.github.io/label/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+  <a href="https://haochen23.github.io/label/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
   <ul class="list-group list-inline tagcloud" id="tags">
     <li class="list-group-item tag-1">
-      <a href="https://ericchen23.github.io/label/analytics/">Analytics</a>
+      <a href="https://haochen23.github.io/label/analytics/">Analytics</a>
     </li>
     <li class="list-group-item tag-1">
-      <a href="https://ericchen23.github.io/label/computer-vision/">Computer Vision</a>
+      <a href="https://haochen23.github.io/label/computer-vision/">Computer Vision</a>
     </li>
     <li class="list-group-item tag-1">
-      <a href="https://ericchen23.github.io/label/data-science/">Data Science</a>
+      <a href="https://haochen23.github.io/label/data-science/">Data Science</a>
     </li>
     <li class="list-group-item tag-1">
-      <a href="https://ericchen23.github.io/label/data-visualization/">Data Visualization</a>
+      <a href="https://haochen23.github.io/label/data-visualization/">Data Visualization</a>
     </li>
     <li class="list-group-item tag-1">
-      <a href="https://ericchen23.github.io/label/deep-learning/">Deep Learning</a>
+      <a href="https://haochen23.github.io/label/deep-learning/">Deep Learning</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/fine-tuning/">Fine-tuning</a>
+      <a href="https://haochen23.github.io/label/fine-tuning/">Fine-tuning</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/image-classification/">Image Classification</a>
+      <a href="https://haochen23.github.io/label/image-classification/">Image Classification</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/instance-segmentation/">Instance Segmentation</a>
+      <a href="https://haochen23.github.io/label/instance-segmentation/">Instance Segmentation</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/mask-rcnn/">Mask-RCNN</a>
+      <a href="https://haochen23.github.io/label/mask-rcnn/">Mask-RCNN</a>
     </li>
     <li class="list-group-item tag-1">
-      <a href="https://ericchen23.github.io/label/matplotlib/">Matplotlib</a>
+      <a href="https://haochen23.github.io/label/matplotlib/">Matplotlib</a>
     </li>
     <li class="list-group-item tag-1">
-      <a href="https://ericchen23.github.io/label/nlp/">NLP</a>
+      <a href="https://haochen23.github.io/label/nlp/">NLP</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/object-detection/">Object Detection</a>
+      <a href="https://haochen23.github.io/label/object-detection/">Object Detection</a>
     </li>
     <li class="list-group-item tag-1">
-      <a href="https://ericchen23.github.io/label/pytorch/">Pytorch</a>
+      <a href="https://haochen23.github.io/label/pytorch/">Pytorch</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/sales-forecasting/">Sales Forecasting</a>
+      <a href="https://haochen23.github.io/label/sales-forecasting/">Sales Forecasting</a>
     </li>
     <li class="list-group-item tag-1">
-      <a href="https://ericchen23.github.io/label/seaborn/">Seaborn</a>
+      <a href="https://haochen23.github.io/label/seaborn/">Seaborn</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/semantic-segmentation/">Semantic Segmentation</a>
+      <a href="https://haochen23.github.io/label/semantic-segmentation/">Semantic Segmentation</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/sentiment-analysis/">Sentiment analysis</a>
+      <a href="https://haochen23.github.io/label/sentiment-analysis/">Sentiment analysis</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/time-series-analysis/">Time Series Analysis</a>
+      <a href="https://haochen23.github.io/label/time-series-analysis/">Time Series Analysis</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/topic-modeling/">Topic Modeling</a>
+      <a href="https://haochen23.github.io/label/topic-modeling/">Topic Modeling</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://ericchen23.github.io/label/transfer-learning/">Transfer Learning</a>
+      <a href="https://haochen23.github.io/label/transfer-learning/">Transfer Learning</a>
     </li>
   </ul>
 </li>
@@ -2581,13 +2580,13 @@ Name: tidy_tweet, dtype: object</pre>
       </div>
    </div>
 </footer>
-<script src="https://ericchen23.github.io/theme/js/jquery.min.js"></script>
+<script src="https://haochen23.github.io/theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://ericchen23.github.io/theme/js/bootstrap.min.js"></script>
+<script src="https://haochen23.github.io/theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="https://ericchen23.github.io/theme/js/respond.min.js"></script>
+<script src="https://haochen23.github.io/theme/js/respond.min.js"></script>
 
 
 
@@ -2597,7 +2596,7 @@ $(document).ready(function () {
   if (!window.jXHR) {
     var jxhr = document.createElement('script');
     jxhr.type = 'text/javascript';
-    jxhr.src = 'https://ericchen23.github.io/theme/js/jXHR.js';
+    jxhr.src = 'https://haochen23.github.io/theme/js/jXHR.js';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(jxhr, s);
   }
@@ -2610,7 +2609,7 @@ $(document).ready(function () {
   });
 });
 </script>
-<script src="https://ericchen23.github.io/theme/js/github.js" type="text/javascript"></script>
+<script src="https://haochen23.github.io/theme/js/github.js" type="text/javascript"></script>
 <!-- End GitHub JS Code -->
 
 
