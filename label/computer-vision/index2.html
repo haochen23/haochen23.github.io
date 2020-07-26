@@ -83,6 +83,13 @@
         <li class="active">Computer Vision</li>
     </ol>
             <article>
+                <h2><a href="https://haochen23.github.io/2020/05/unet-segmentation.html">Foetal Head Segmentation on Ultrasound Images using Residual U-Net</a></h2>
+                <div class="summary"><p>Measuring foetal head circumference is one of the most accurate method to estimate gestational age after the first trimester (first three months of pregnancy). To automate this procedure, the most important step is segment the foetal head area in ultrasound images. Then we can fit an ellipse on the head area, and build a regressor using the head mask to estimate gestational age. <br /> In this post, we will use a U-Net architecture with residual blocks to make head segmentations. U-Net performs very well on medical images. And due to its relatively compact structure, its speed is much faster than Mask-RCNN. <br /><img alt="" height="80%" src="https://github.com/haochen23/gpage-images/blob/master/Computer%20vision/foetal-head.png?raw=true" width="80%" /></p>
+                    <a class="btn btn-default btn-xs" href="https://haochen23.github.io/2020/05/unet-segmentation.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="https://haochen23.github.io/2020/05/instance-segmentation-mask-rcnn.html">Instance Segmentation using Mask-RCNN and PyTorch</a></h2>
                 <div class="summary"><p>In this post, we will explore Mask-RCNN object detector with Pytorch. We will use the pretrained Mask-RCNN model with Resnet50 as the backbone. <br /><img alt="" height="60%" src="https://github.com/haochen23/gpage-images/blob/master/Computer%20vision/Mask-rcnn.png?raw=true" width="60%" /></p>
                     <a class="btn btn-default btn-xs" href="https://haochen23.github.io/2020/05/instance-segmentation-mask-rcnn.html">more ...</a>
@@ -110,13 +117,6 @@
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="https://haochen23.github.io/2019/04/pre-trained-models-pytorch-keras.html">Using Pre-trained Models with Pytorch and Keras</a></h2>
-                <div class="summary"><p>In this post, we will try to use pre-trained models to do image classification. We will use two popular deep learning frameworks, PyTorch and Keras. Let's find out the workflow of using pre-trained models in these two frameworks. <br /><img alt="" height="50%" src="https://github.com/haochen23/gpage-images/blob/master/Computer%20vision/classification.png?raw=true" width="50%" /></p>
-                    <a class="btn btn-default btn-xs" href="https://haochen23.github.io/2019/04/pre-trained-models-pytorch-keras.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev"><a href="https://haochen23.github.io/label/computer-vision/index.html">&laquo;</a>
@@ -125,7 +125,10 @@
                             href="https://haochen23.github.io/label/computer-vision/index.html">1</a></li>
                     <li class="active"><a
                             href="https://haochen23.github.io/label/computer-vision/index2.html">2</a></li>
-                <li class="next disabled"><a href="#">&raquo;</a></li>
+                    <li class=""><a
+                            href="https://haochen23.github.io/label/computer-vision/index3.html">3</a></li>
+                <li class="next"><a
+                        href="https://haochen23.github.io/label/computer-vision/index3.html">&raquo;</a></li>
         </ul>
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -156,11 +159,11 @@
 <li class="list-group-item">
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
   <ul class="list-group" id="recentposts">
-    <li class="list-group-item"><a href="https://haochen23.github.io/2020/06/covid-19-classifier.html">Covid-19 Classifier: Classification on Lung CT Scans</a></li>
+    <li class="list-group-item"><a href="https://haochen23.github.io/./2020/07/covid-19-classifier.html">Covid-19 Part II: Lung Segmentation on CT Scans</a></li>
+    <li class="list-group-item"><a href="https://haochen23.github.io/./2020/06/covid-19-classifier.html">Covid-19 Part I: Classification on Lung CT Scans</a></li>
     <li class="list-group-item"><a href="https://haochen23.github.io/2020/06/fine-tune-faster-rcnn-pytorch.html">Beagle Detector: Fine-tune Faster-RCNN</a></li>
     <li class="list-group-item"><a href="https://haochen23.github.io/2020/06/fine-tune-mask-rcnn-pytorch.html">Fine-tune PyTorch Pre-trained Mask-RCNN</a></li>
     <li class="list-group-item"><a href="https://haochen23.github.io/2020/06/fine-tune-mask-rcnn.html">Train Mask-RCNN on a Custom Dataset</a></li>
-    <li class="list-group-item"><a href="https://haochen23.github.io/2020/05/unet-segmentation.html">Foetal Head Segmentation on Ultrasound Images using Residual U-Net</a></li>
   </ul>
 </li>
 <!-- End Sidebar/Recent Posts -->
@@ -169,7 +172,7 @@
 <li class="list-group-item">
   <a href="https://haochen23.github.io/label/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
   <ul class="list-group list-inline tagcloud" id="tags">
-    <li class="list-group-item tag-1">
+    <li class="list-group-item tag-2">
       <a href="https://haochen23.github.io/label/analytics/">Analytics</a>
     </li>
     <li class="list-group-item tag-1">
@@ -184,19 +187,19 @@
     <li class="list-group-item tag-1">
       <a href="https://haochen23.github.io/label/deep-learning/">Deep Learning</a>
     </li>
-    <li class="list-group-item tag-1">
+    <li class="list-group-item tag-2">
       <a href="https://haochen23.github.io/label/fine-tune/">Fine-tune</a>
     </li>
-    <li class="list-group-item tag-1">
+    <li class="list-group-item tag-2">
       <a href="https://haochen23.github.io/label/instance-segmentation/">Instance Segmentation</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://haochen23.github.io/label/keras/">Keras</a>
     </li>
-    <li class="list-group-item tag-1">
+    <li class="list-group-item tag-2">
       <a href="https://haochen23.github.io/label/mask-rcnn/">Mask-RCNN</a>
     </li>
-    <li class="list-group-item tag-1">
+    <li class="list-group-item tag-2">
       <a href="https://haochen23.github.io/label/matplotlib/">Matplotlib</a>
     </li>
     <li class="list-group-item tag-1">
@@ -205,7 +208,7 @@
     <li class="list-group-item tag-1">
       <a href="https://haochen23.github.io/label/pytorch/">Pytorch</a>
     </li>
-    <li class="list-group-item tag-1">
+    <li class="list-group-item tag-2">
       <a href="https://haochen23.github.io/label/seaborn/">Seaborn</a>
     </li>
     <li class="list-group-item tag-1">
